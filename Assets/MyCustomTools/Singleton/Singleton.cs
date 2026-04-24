@@ -1,9 +1,10 @@
+using IncredibleAttributes;
 using UnityEngine;
 
 [DefaultExecutionOrder(-10)]
 public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
-    [Header("Singleton Settings")]
+    [Title("Singleton Settings"),BoxGroup]
     [SerializeField] private bool m_dontDestroyOnLoad;
 
     private static T _instance;
