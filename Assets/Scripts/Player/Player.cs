@@ -3,11 +3,14 @@ using GameData;
 using IncredibleAttributes;
 using UnityEngine;
 using PlayerAbility;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private PlayerContextData playerContext;
     [SerializeField, Expandable, ] private PlayerAbilityBase[] abilities;
+
+    public UnityEvent onBounce;
 
     private void Awake()
     {

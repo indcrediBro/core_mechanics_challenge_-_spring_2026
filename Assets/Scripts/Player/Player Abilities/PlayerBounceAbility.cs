@@ -20,15 +20,19 @@ namespace PlayerAbility
 
         private void Bounce(PlayerContextData _ctx)
         {
-            if (IsGrounded3D(_ctx))
+            Collider[] hits = IsGrounded3D(_ctx);
+            if (hits.Length > 0)
             {
                 _ctx.rigidbody.linearVelocity = new Vector3(_ctx.rigidbody.linearVelocity.x, bounceForce, _ctx.rigidbody.linearVelocity.z);
+                _ctx.groundCheck.position = hits[0].ClosestPoint(_ctx.groundCheck.position);
+                _ctx.player.onBounce.Invoke();
             }
         }
 
-        private bool IsGrounded3D(PlayerContextData _ctx)
+        private Collider[] IsGrounded3D(PlayerContextData _ctx)
         {
-            return Groundchecker.GetGroundHits(_ctx.groundCheck, groundcheckRadius, groundLayer).Length>0;
+            return Groundchecker.GetGroundHitsRaycast(_ctx.player.transform, groundcheckRadius, groundLayer);
+            // return Groundchecker.GetGroundHits(_ctx.groundCheck, groundcheckRadius, groundLayer).Length>0;
         }
     }
 }

@@ -15,4 +15,5 @@ MonoBehaviour:
   distance: 5
   heightOffset: 2
   minPitch: -20
-  maxPitch: 60
+  maxPitch: 90
+  rotationSpeed: 5
