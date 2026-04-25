@@ -1,3 +1,4 @@
+using GameData;
 using IncredibleAttributes;
 using UnityEngine;
 
@@ -6,9 +7,7 @@ namespace PlayerAbility
     [CreateAssetMenu(fileName = "PlayerAbility Collision", menuName = "Player/Collision Ability")]
     public class PlayerCollisionAbility: PlayerAbilityBase
     {
-        [Title("Collisions")]  private string name = "Collisions";
-
-        public override void OnCollisionColliderEnter(Collision other, PlayerContext _ctx = null)
+        public override void OnCollisionColliderEnter(Collision other, PlayerContextData _ctx = null)
         {
             if (other.collider.CompareTag("Dead"))
             {
@@ -16,7 +15,7 @@ namespace PlayerAbility
             }
         }
 
-        public override void OnTriggerColliderEnter(Collider other, PlayerContext _ctx = null)
+        public override void OnTriggerColliderEnter(Collider other, PlayerContextData _ctx = null)
         {
             if (other.CompareTag("Dead"))
             {

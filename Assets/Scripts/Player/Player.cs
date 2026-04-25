@@ -1,23 +1,13 @@
 using System;
+using GameData;
 using IncredibleAttributes;
 using UnityEngine;
 using PlayerAbility;
 
-[Serializable]
-public class PlayerContext
-{
-    public Player player;
-    public Rigidbody rigidbody;
-    public Transform camera;
-    public Transform groundCheck;
-
-    public float yaw;
-}
-
 public class Player : MonoBehaviour
 {
-    [SerializeField] private PlayerContext playerContext;
-    [SerializeField, Expandable] private PlayerAbilityBase[] abilities;
+    [SerializeField] private PlayerContextData playerContext;
+    [SerializeField, Expandable, ] private PlayerAbilityBase[] abilities;
 
     private void Awake()
     {

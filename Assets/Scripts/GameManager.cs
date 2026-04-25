@@ -13,6 +13,12 @@ public class GameManager : Singleton<GameManager>
 
     public static event Action<GameState> OnStateChanged;
     public static event Action<int>       OnScoreChanged;
+    public static event Action<string> OnWeaponSwitched;
+
+    public static void SwitchWeapon(string gunName)
+    {
+        OnWeaponSwitched?.Invoke(gunName);
+    }
 
     [Space]
     [SerializeField, Expandable, BoxGroup("Game Settings")] private GameDefaultData defaultData;
