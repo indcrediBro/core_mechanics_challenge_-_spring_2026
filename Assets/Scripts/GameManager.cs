@@ -9,7 +9,7 @@ public enum GameState { MainMenu, Playing, Paused, GameOver }
 public class GameManager : Singleton<GameManager>
 {
     [Space]
-    [SerializeField, ReadOnly, BoxGroup("Game Settings")] private GameState currentState;
+    [SerializeField, ReadOnly, BoxGroup("Game Settings")] public GameState CurrentState;
 
     public static event Action<GameState> OnStateChanged;
     public static event Action<int>       OnScoreChanged;
@@ -17,7 +17,8 @@ public class GameManager : Singleton<GameManager>
     [Space]
     [SerializeField, Expandable, BoxGroup("Game Settings")] private GameDefaultData defaultData;
 
-    [SerializeField, BoxGroup("Game Settings")] private GameSession gameData;
+    [SerializeField, BoxGroup("Game Settings")] private GameSessionData gameData;
+    public GameSessionData GameData => gameData;
 
     protected override void Awake()
     {
@@ -32,28 +33,28 @@ public class GameManager : Singleton<GameManager>
 
     public void StartGame()
     {
-        gameData.Initialize(defaultData.HighScoreKey);
+        gameData.Initialize(defaultData.HighScoreKey,defaultData.SensitivityKey);
         ChangeState(GameState.Playing);
         OnScoreChanged?.Invoke(gameData.CurrentScore);
     }
 
     public void PauseGame()
     {
-        if (currentState != GameState.Playing) return;
+        if (CurrentState != GameState.Playing) return;
         Time.timeScale = 0f;
         ChangeState(GameState.Paused);
     }
 
     public void ResumeGame()
     {
-        if (currentState != GameState.Paused) return;
+        if (CurrentState != GameState.Paused) return;
         Time.timeScale = 1f;
         ChangeState(GameState.Playing);
     }
 
     public void GameOver()
     {
-        if (currentState == GameState.GameOver) return;
+        if (CurrentState == GameState.GameOver) return;
         ChangeState(GameState.GameOver);
 
         if (gameData.CurrentScore > gameData.HighScore)
@@ -70,12 +71,12 @@ public class GameManager : Singleton<GameManager>
 
     private void ChangeState(GameState newState)
     {
-        currentState = newState;
+        CurrentState = newState;
         OnStateChanged?.Invoke(newState);
     }
 
     private void LoadPrefs()
     {
-        gameData.Initialize(defaultData.HighScoreKey);
+        gameData.Initialize(defaultData.HighScoreKey,defaultData.SensitivityKey);
     }
 }

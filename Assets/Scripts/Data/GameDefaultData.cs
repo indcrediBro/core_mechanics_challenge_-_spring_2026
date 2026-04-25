@@ -15,11 +15,14 @@ namespace GameData
         [SerializeField] private string MASTER_VOL_KEY = "Master";
         [SerializeField] private string SFX_VOL_KEY    = "SFX";
         [SerializeField] private string MUSIC_VOL_KEY  = "Music";
+        [Title("Gameplay")]
+        [SerializeField] private string MOUSE_SENSITIVITY_KEY = "Sensitivity";
 
         public int ScorePerPlatform => scorePerPlatform;
         public int ScorePerKill => scorePerKill;
 
         public string HighScoreKey => HIGH_SCORE_KEY;
+        public string SensitivityKey => MOUSE_SENSITIVITY_KEY;
         public string MasterKey => MASTER_VOL_KEY;
         public string SfxVolKey => SFX_VOL_KEY;
         public string MusicVolKey => MUSIC_VOL_KEY;
