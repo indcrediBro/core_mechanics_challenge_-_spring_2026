@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerAbility Bounce
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAbility.PlayerBounceAbility
   bounceForce: 10
-  groundcheckRadius: 0.501
+  groundcheckRadius: 0.52
   groundLayer:
     serializedVersion: 2
     m_Bits: 1

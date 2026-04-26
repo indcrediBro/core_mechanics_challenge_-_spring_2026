@@ -14,10 +14,16 @@ public class GameManager : Singleton<GameManager>
     public static event Action<GameState> OnStateChanged;
     public static event Action<int>       OnScoreChanged;
     public static event Action<string> OnWeaponSwitched;
+    public static event Action<Platform> OnPlatformBounced;
 
     public static void SwitchWeapon(string gunName)
     {
         OnWeaponSwitched?.Invoke(gunName);
+    }
+
+    public static void PlatformBounced(Platform platform)
+    {
+        OnPlatformBounced?.Invoke(platform);
     }
 
     [Space]
