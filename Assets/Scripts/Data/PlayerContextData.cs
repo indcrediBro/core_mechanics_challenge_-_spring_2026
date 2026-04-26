@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace GameData
 {
-    [Serializable]
+    [Serializable, ]
     public class PlayerContextData
     {
         public Player player;
