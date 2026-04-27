@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 
 namespace IncredibleAttributes
@@ -7,7 +8,7 @@ namespace IncredibleAttributes
     /// Works like a dictionary but preserves insertion order and allows
     /// duplicate display names.
     /// </summary>
-    public class DropdownList<T> : IDropdownList
+    public class DropdownList<T> : IDropdownList, IEnumerable
     {
         private readonly List<string> _keys = new();
         private readonly List<T> _values = new();
@@ -25,6 +26,11 @@ namespace IncredibleAttributes
             for (int i = 0; i < _values.Count; i++)
                 result[i] = _values[i];
             return result;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            throw new System.NotImplementedException();
         }
     }
 

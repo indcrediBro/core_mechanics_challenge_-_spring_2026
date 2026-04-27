@@ -2,29 +2,35 @@ using System;
 using UnityEngine;
 using Weapons;
 
-namespace Weapons
+namespace HealthSystem
 {
-    public class Health : MonoBehaviour, IDamageable
+    public abstract class Health : MonoBehaviour, IDamageable
     {
-        int startingHealth = 100;
+        [SerializeField] protected int startingHealth = 100;
+        [SerializeField] private bool shouldDestroyOnDeath = true;
         private int health;
 
-        private void OnEnable()
+        protected virtual void OnEnable()
         {
             health = startingHealth;
         }
 
-        public void TakeDamage(int damage)
+        public virtual void TakeDamage(int damage)
         {
             Debug.Log("Damage Taken for " + damage + " on gameobject " + gameObject.name);
             health -= damage;
 
-            if (health <= 0) Dead();
+            if (health <= 0) TriggerDeath();
         }
 
-        private void Dead()
+        protected virtual void TriggerDeath()
         {
-            Destroy(gameObject);
+            if (shouldDestroyOnDeath)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            gameObject?.SetActive(false);
         }
     }
 }

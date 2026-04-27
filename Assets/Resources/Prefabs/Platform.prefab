@@ -90,6 +90,99 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &5473449383301219639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4151819329128377122}
+  - component: {fileID: 6009678190789251186}
+  m_Layer: 0
+  m_Name: Feedback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4151819329128377122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5473449383301219639}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5442937495926665831}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6009678190789251186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5473449383301219639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7efe084082bb1264c8bcba15aed3acff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JUICE::JUICE.JuicePlayer
+  Feedbacks:
+  - rid: 615216958883233904
+  PlayOnAwake: 0
+  Sequential: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 615216958883233904
+      type: {class: PositionFeedback, ns: JUICE, asm: JUICE}
+      data:
+        Label: 
+        Enabled: 1
+        Delay: 0
+        Target: {fileID: 5116428407569121388}
+        Mode: 0
+        ShakeDuration: 0.4
+        ShakeAmplitude: {x: 0.2, y: 0.2, z: 0.2}
+        ShakeFrequency: 20
+        ShakeFalloff: 1
+        Destination: {fileID: 0}
+        PositionA: {x: 0, y: 0, z: 0}
+        PositionB: {x: 1, y: 1, z: 1}
+        MoveDuration: 0.3
+        MoveCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        ReturnToOriginAfterMove: 1
+        ReturnDuration: 0.3
 --- !u!1 &6129620173821490976
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,7 +194,7 @@ GameObject:
   - component: {fileID: 5442937495926665831}
   - component: {fileID: 6401834192604583370}
   - component: {fileID: 2574067274409045334}
-  - component: {fileID: -2827979085335841165}
+  - component: {fileID: 2509948340037477727}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -123,6 +216,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5116428407569121388}
+  - {fileID: 4151819329128377122}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &6401834192604583370
@@ -165,7 +259,23 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 1b0e655e129d4bc41a49cea02004a5db, type: 3}
   platformMaterial: {fileID: 0}
   shouldMoveToRandomHeight: 1
---- !u!114 &-2827979085335841165
+  shouldDestroyRandomlyOnStart: 1
+  onBounceTaken:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6009678190789251186}
+        m_TargetAssemblyTypeName: JUICE.JuicePlayer, JUICE
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2509948340037477727
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,6 +284,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 6129620173821490976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c16432fa5ad749fb9094117dca648e16, type: 3}
+  m_Script: {fileID: 11500000, guid: 603121e465f74ccab827482b7dd8955b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Weapons.Health
+  m_EditorClassIdentifier: Assembly-CSharp::HealthSystem.PlatformHealth
+  startingHealth: 100
+  shouldDestroyOnDeath: 1
+  onDamageTaken:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2574067274409045334}
+        m_TargetAssemblyTypeName: Platform, Assembly-CSharp
+        m_MethodName: HandleBounce
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

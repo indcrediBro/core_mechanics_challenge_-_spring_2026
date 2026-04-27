@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66648eb9d6294b8eb35a6d7dc9beeaed, type: 3}
   m_Name: PlayerAbility Camera
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAbility.PlayerCameraAbility
-  distance: 5
-  heightOffset: 2
-  minPitch: -20
-  maxPitch: 90
+  distance: 0
+  heightOffset: 0.7
+  minPitch: -75
+  maxPitch: 75
   rotationSpeed: 5
