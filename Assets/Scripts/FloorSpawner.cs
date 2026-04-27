@@ -6,7 +6,7 @@ public class FloorSpawner : MonoBehaviour
     [SerializeField] private Transform player;
     [SerializeField] private GameObject floorPrefab;
 
-    [SerializeField] private float floorHeight = 15f;
+    [SerializeField] private int floorHeight = 15;
     [SerializeField] private int initialSpawnedFloors = 5;
     private void Start()
     {

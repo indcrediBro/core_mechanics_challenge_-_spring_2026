@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="06ef1e3e-b9c5-4315-8a47-3838b97dfe37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core_mechanics_challenge_-_spring_2026/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core_mechanics_challenge_-_spring_2026/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scriptable Objects/Player/PlayerAbility Bounce.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scriptable Objects/Player/PlayerAbility Bounce.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerBounceAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerBounceAbility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/Lava.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Lava/Lava.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloorSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloorSpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +48,7 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -128,7 +124,9 @@
       <workItem from="1777048764153" duration="1937000" />
       <workItem from="1777050885464" duration="28127000" />
       <workItem from="1777133485412" duration="11185000" />
-      <workItem from="1777231575232" duration="5376000" />
+      <workItem from="1777231575232" duration="6265000" />
+      <workItem from="1777248492046" duration="2173000" />
+      <workItem from="1777259076459" duration="1319000" />
     </task>
     <servers />
   </component>
