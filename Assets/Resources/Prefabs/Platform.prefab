@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 5442937495926665831}
   - component: {fileID: 6401834192604583370}
   - component: {fileID: 2574067274409045334}
+  - component: {fileID: -2827979085335841165}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -164,3 +165,15 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 1b0e655e129d4bc41a49cea02004a5db, type: 3}
   platformMaterial: {fileID: 0}
   shouldMoveToRandomHeight: 1
+--- !u!114 &-2827979085335841165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6129620173821490976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c16432fa5ad749fb9094117dca648e16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Weapons.Health

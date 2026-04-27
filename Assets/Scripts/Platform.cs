@@ -26,11 +26,6 @@ public class Platform : MonoBehaviour
         }
     }
 
-    private void OnDisable()
-    {
-        // GameManager.OnPlatformBounced -= HandleBounce;
-    }
-
     public void HandleBounce()
     {
         if(platformMaterial == null) return;
@@ -57,13 +52,5 @@ public class Platform : MonoBehaviour
     private void BreakTile()
     {
         Destroy(gameObject);
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        // if (other.gameObject.CompareTag("Player"))
-        // {
-        //     HandleBounce(this);
-        // }
     }
 }

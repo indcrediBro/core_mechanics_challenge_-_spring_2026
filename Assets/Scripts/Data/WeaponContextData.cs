@@ -2,7 +2,7 @@ using System;
 using IncredibleAttributes;
 using UnityEngine;
 
-public enum FireMode  { Single, Auto, Continuous }
+public enum FireMode  { Single, SemiAuto, Continuous }
 public enum ShootType { Projectile, Hitscan }
 
 [Serializable]
