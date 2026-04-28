@@ -66,8 +66,10 @@ namespace PlayerAbility
 
     private void HandleWeaponSwitch(PlayerContextData _ctx, string gunName)
     {
+        if(_ctx.selectedGun!=null) _ctx.selectedGun.gameObject.SetActive(false);
         activeGun = gunName;
         _ctx.selectedGun = GetGun(_ctx, gunName);
+        _ctx.selectedGun.gameObject.SetActive(true);
     }
 
     private WeaponController GetGun(PlayerContextData _ctx, string gunName)

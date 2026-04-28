@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="06ef1e3e-b9c5-4315-8a47-3838b97dfe37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core_mechanics_challenge_-_spring_2026/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core_mechanics_challenge_-_spring_2026/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Materials/pLAYER Physics Material.physicMaterial" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Materials/pLAYER Physics Material.physicMaterial.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerBounceAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerBounceAbility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerCollisionAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerCollisionAbility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerWeaponAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerWeaponAbility.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +128,7 @@
       <workItem from="1777248492046" duration="2173000" />
       <workItem from="1777259076459" duration="3172000" />
       <workItem from="1777278516097" duration="11563000" />
-      <workItem from="1777379561966" duration="1838000" />
+      <workItem from="1777379561966" duration="3573000" />
     </task>
     <servers />
   </component>
