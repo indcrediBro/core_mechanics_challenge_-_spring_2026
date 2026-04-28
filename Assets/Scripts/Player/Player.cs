@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField, Expandable, ] private PlayerAbilityBase[] abilities;
 
     public UnityEvent onBounce;
-
+    public UnityEvent onDeath;
     private void Awake()
     {
         foreach (PlayerAbilityBase ability in abilities)

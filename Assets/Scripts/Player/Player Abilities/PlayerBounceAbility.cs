@@ -19,7 +19,7 @@ namespace PlayerAbility
         public override void OnStart(PlayerContextData _ctx = null)
         {
             base.OnStart(_ctx);
-            cooldown = 0.5f;
+            cooldown = 0.25f;
             canBreak = true;
         }
 

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81530436533641a19dfedcdcc3bf628d, type: 3}
   m_Name: PlayerAbility Bounce
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAbility.PlayerBounceAbility
-  bounceForce: 10
-  groundcheckRadius: 0.25
+  bounceForce: 14
+  groundcheckRadius: 0.3
   groundLayer:
     serializedVersion: 2
     m_Bits: 1

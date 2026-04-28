@@ -11,6 +11,7 @@ namespace PlayerAbility
         {
             if (other.collider.CompareTag("Dead"))
             {
+                _ctx.player.onDeath.Invoke();
                 GameManager.Instance.GameOver();
             }
         }
@@ -19,6 +20,7 @@ namespace PlayerAbility
         {
             if (other.CompareTag("Dead"))
             {
+                _ctx.player.onDeath.Invoke();
                 GameManager.Instance.GameOver();
             }
         }
