@@ -19,6 +19,8 @@ public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         private set => _instance = value;
     }
 
+    public static bool IsInitialised => _instance != null;
+
     protected virtual void Awake()
     {
         if (_instance == null)

@@ -6,7 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="06ef1e3e-b9c5-4315-8a47-3838b97dfe37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core_mechanics_challenge_-_spring_2026/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core_mechanics_challenge_-_spring_2026/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerWeaponAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerWeaponAbility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/Singleton/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyCustomTools/Singleton/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Outline Square-sheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Outline Square-sheet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Outline Square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Outline Square.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Outline Square1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Outline Square1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Outline Square2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Outline Square2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Outline Square3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Outline Square3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Outline Square4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Outline Square4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Outline Square.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Outline Square.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Outline Square.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Outline Square.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloorSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloorSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Fire/Fire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Fire/Fire.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +46,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerCameraAbility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerCollisionAbility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerWeaponAbility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Localization/LocalizationDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Localization/LocalizationManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Localization/LocalizedTextTMP.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenuScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SettingsScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/IDamageable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -128,7 +155,10 @@
       <workItem from="1777248492046" duration="2173000" />
       <workItem from="1777259076459" duration="3172000" />
       <workItem from="1777278516097" duration="11563000" />
-      <workItem from="1777379561966" duration="3573000" />
+      <workItem from="1777379561966" duration="8853000" />
+      <workItem from="1777473786162" duration="1097000" />
+      <workItem from="1777514285612" duration="43000" />
+      <workItem from="1777514332762" duration="4187000" />
     </task>
     <servers />
   </component>

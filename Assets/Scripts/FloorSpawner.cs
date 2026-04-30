@@ -24,6 +24,8 @@ public class FloorSpawner : MonoBehaviour
 
     private void Update()
     {
+        if(!player) return;
+
         while (player.position.y + floorHeight * spawnBuffer >= _highestSpawnedY)
         {
             _highestSpawnedY += floorHeight;
