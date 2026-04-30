@@ -47,6 +47,7 @@ public class GameManager : Singleton<GameManager>
         gameData.Initialize();
         ChangeState(GameState.Playing);
         OnScoreChanged?.Invoke(gameData.CurrentScore);
+        SceneManager.LoadScene("Game");
     }
 
     public void PauseGame()

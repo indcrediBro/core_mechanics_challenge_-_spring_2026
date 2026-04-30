@@ -16,4 +16,4 @@ MonoBehaviour:
   heightOffset: 0.7
   minPitch: -75
   maxPitch: 75
-  rotationSpeed: 5
+  rotationSpeed: 6

@@ -33,7 +33,7 @@ namespace PlayerAbility
             bool invertY = SettingsManager.LiveGameplay.InvertY;
 
             yaw += Input.GetAxis("Mouse X") * sens;
-            pitch = Input.GetAxis("Mouse Y") * sens * (invertY ? -1f : 1f);
+            pitch += Input.GetAxis("Mouse Y") * sens * (invertY ? -1f : 1f);
 
             pitch  = Mathf.Clamp(pitch, minPitch, maxPitch);
 

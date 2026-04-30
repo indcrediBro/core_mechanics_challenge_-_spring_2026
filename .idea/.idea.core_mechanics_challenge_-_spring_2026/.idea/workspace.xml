@@ -6,56 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="06ef1e3e-b9c5-4315-8a47-3838b97dfe37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core_mechanics_challenge_-_spring_2026/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core_mechanics_challenge_-_spring_2026/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/Editor/SettingsArrowSelectorEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/Editor/SettingsArrowSelectorEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingPaths.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingPaths.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsApplier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsApplier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsArrowSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsArrowSelector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsSliderBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsSliderBinder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsToggleBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsToggleBinder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyCustomTools/Settings Core/Scripts/SettingsUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Black Leg.ase" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Black Leg.ase.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Fonts/MetalMania-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Fonts/MetalMania-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Fonts/amazdoom SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Fonts/amazdoom SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scriptable Objects/Data/GameDefaultData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scriptable Objects/Data/GameDefaultData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scriptable Objects/Data/GameSessionData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scriptable Objects/Data/GameSessionData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scriptable Objects/Data/Localization Database.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scriptable Objects/Data/Localization Database.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/Groundchecker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/Groundchecker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioClipRandomiser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/AudioClipRandomiser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioClipRandomiser.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/AudioClipRandomiser.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CircleSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/CircleSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CircleSpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/CircleSpawner.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameDefaultData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/GameDefaultData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameSessionData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/GameSessionData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Destroyer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Destroyer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Destroyer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Destroyer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Floor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Floor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Floor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Floor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloorSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/FloorSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloorSpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/FloorSpawner.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Health.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LavaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/LavaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LavaController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/LavaController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Platform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Platform.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Platform.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlatformHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlatformHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlatformHealth.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlatformHealth.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerBounceAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerBounceAbility.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerCameraAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerCameraAbility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleLookat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/SimpleLookat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleLookat.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/SimpleLookat.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Localization/LocalizedTextTMP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Localization/LocalizedTextTMP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Wall.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wall.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Wall.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/AudioMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/AudioMixer.mixer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SaveData/gameprefs_slot0.json" beforeDir="false" afterPath="$PROJECT_DIR$/SaveData/gameprefs_slot0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SaveData/gameprefs_slot0.json.bak" beforeDir="false" afterPath="$PROJECT_DIR$/SaveData/gameprefs_slot0.json.bak" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,6 +154,7 @@
       <workItem from="1777514332762" duration="4187000" />
       <workItem from="1777532440860" duration="2302000" />
       <workItem from="1777554780045" duration="12994000" />
+      <workItem from="1777576733701" duration="3471000" />
     </task>
     <servers />
   </component>

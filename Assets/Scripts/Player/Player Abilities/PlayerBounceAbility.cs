@@ -23,25 +23,32 @@ namespace PlayerAbility
             canBreak = true;
         }
 
-        public override void OnUpdate(PlayerContextData _ctx = null)
+        public override void OnFixedUpdate(PlayerContextData _ctx = null)
         {
             Bounce(_ctx);
         }
 
+        private bool wasGrounded = false;
+
         private void Bounce(PlayerContextData _ctx)
         {
-            if (!canBreak) return;
-            canBreak = false;
             Collider[] hits = IsGrounded3D(_ctx);
-            if (hits.Length > 0)
+            bool isGrounded = hits.Length > 0;
+
+            // Only fire on the frame the player LANDS (airborne → grounded transition)
+            if (isGrounded && !wasGrounded)
             {
-                _ctx.rigidbody.linearVelocity = new Vector3(_ctx.rigidbody.linearVelocity.x, bounceForce, _ctx.rigidbody.linearVelocity.z);
+                _ctx.rigidbody.linearVelocity = new Vector3(
+                    _ctx.rigidbody.linearVelocity.x,
+                    bounceForce,
+                    _ctx.rigidbody.linearVelocity.z);
+
                 _ctx.groundCheck.position = hits[0].ClosestPoint(_ctx.groundCheck.position);
                 _ctx.player.onBounce.Invoke();
-               hits[0].GetComponent<Platform>()?.HandleBounce();
+                hits[0].GetComponent<Platform>()?.HandleBounce();
             }
 
-            EnableBreakness(_ctx);
+            wasGrounded = isGrounded;
         }
 
         private IEnumerator EnableBreaknessCO()
