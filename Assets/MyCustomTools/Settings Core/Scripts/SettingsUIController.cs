@@ -189,13 +189,11 @@ namespace Core.Settings
         private void OnApplyClicked()
         {
             SettingsManager.Apply();
-            CloseSettings();
         }
 
         private void OnCancelClicked()
         {
             SettingsManager.Revert();
-            CloseSettings();
         }
 
         private void OnResetClicked()

@@ -27,7 +27,6 @@ public class GameManager : Singleton<GameManager>
     }
 
     [Space]
-    [SerializeField, Expandable, BoxGroup("Game Settings")] private GameDefaultData defaultData;
 
     [SerializeField, BoxGroup("Game Settings")] private GameSessionData gameData;
     public GameSessionData GameData => gameData;
@@ -45,7 +44,7 @@ public class GameManager : Singleton<GameManager>
 
     public void StartGame()
     {
-        gameData.Initialize(defaultData.HighScoreKey,defaultData.SensitivityKey);
+        gameData.Initialize();
         ChangeState(GameState.Playing);
         OnScoreChanged?.Invoke(gameData.CurrentScore);
     }
@@ -89,6 +88,6 @@ public class GameManager : Singleton<GameManager>
 
     private void LoadPrefs()
     {
-        gameData.Initialize(defaultData.HighScoreKey,defaultData.SensitivityKey);
+        gameData.Initialize();
     }
 }

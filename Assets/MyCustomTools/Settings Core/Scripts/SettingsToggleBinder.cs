@@ -25,7 +25,7 @@ namespace Core.Settings
         // ── Inspector ──────────────────────────────────────────────────────────
 
         [Header("Binding")] [Tooltip("Which bool setting to bind to this toggle.")]
-        public BoolSetting Setting = BoolSetting.Audio_MuteAll;
+        public BoolSetting Setting = BoolSetting.Graphics_Fullscreen;
 
         [Tooltip("When true, the stored value is inverted relative to the toggle state.\n\n" +
                  "Example: a 'Sound Enabled' toggle should bind to Audio_MuteAll with Invert = true,\n" +

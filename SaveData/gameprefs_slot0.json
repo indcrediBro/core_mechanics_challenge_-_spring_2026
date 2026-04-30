@@ -1,0 +1,24 @@
+﻿{
+    "version": 1,
+    "savedAt": "2026-04-30 17:50:58Z",
+    "keys": [
+        "Sensitivity",
+        "InvertY",
+        "Profanity",
+        "Language",
+        "Audio",
+        "Graphics",
+        "Gameplay",
+        "Accessibility"
+    ],
+    "values": [
+        "1",
+        "0",
+        "1",
+        "English",
+        "{\"MasterVolume\":1.0,\"MusicVolume\":0.800000011920929,\"SFXVolume\":1.0,\"UIVolume\":1.0}",
+        "{\"QualityLevel\":2,\"Fullscreen\":true}",
+        "{\"MouseSensitivity\":1.0,\"InvertY\":false,\"ProfanityEnabled\":true,\"Language\":\"English\"}",
+        "{}"
+    ]
+}

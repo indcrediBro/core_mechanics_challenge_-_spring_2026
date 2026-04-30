@@ -1,5 +1,5 @@
 using UnityEngine;
-using System;
+using Core.Settings;
 using IncredibleAttributes;
 
 namespace GameData
@@ -7,26 +7,26 @@ namespace GameData
     [CreateAssetMenu(fileName = "GameSessionData", menuName = "Game/Session Data", order = 1)]
     public class GameSessionData: ScriptableObject
     {
+
+        [Title("Gameplay")]
         [ShowNonSerializedField] private int currentScore;
         [ShowNonSerializedField] private int highScore;
         [ShowNonSerializedField] private float playTime;
 
         [ShowNonSerializedField] private string highscoreKey;
 
-        [ShowNonSerializedField] private string SensitivityKey;
 
-        public void Initialize(string _highscoreKey, string _sensitivityKey)
+        public void Initialize()
         {
             currentScore = 0;
-            highscoreKey = _highscoreKey;
-            SensitivityKey = _sensitivityKey;
+            highscoreKey = GameDefaultData.HighScoreKey;
             highScore = GamePrefs.GetInt(highscoreKey, 0);
         }
 
         public int CurrentScore => currentScore;
         public int HighScore => highScore;
         public float PlayTime => playTime;
-        public float Sensitivity => GamePrefs.GetFloat(SensitivityKey, 1f);
+        public float Sensitivity => SettingsManager.LiveGameplay.MouseSensitivity;
 
 
         public void AddScore(int _scoreToAdd)

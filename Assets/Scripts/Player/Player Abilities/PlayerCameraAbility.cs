@@ -1,4 +1,5 @@
 using System.Collections;
+using Core.Settings;
 using GameData;
 using IncredibleAttributes;
 using UnityEngine;
@@ -28,10 +29,12 @@ namespace PlayerAbility
 
         public override void OnUpdate(PlayerContextData _ctx = null)
         {
-            float sensitivity = GameManager.Instance.GameData.Sensitivity;
+            float sens   = SettingsManager.LiveGameplay.MouseSensitivity;
+            bool invertY = SettingsManager.LiveGameplay.InvertY;
 
-            yaw   += Input.GetAxis("Mouse X") * sensitivity;
-            pitch -= Input.GetAxis("Mouse Y") * sensitivity;
+            yaw += Input.GetAxis("Mouse X") * sens;
+            pitch = Input.GetAxis("Mouse Y") * sens * (invertY ? -1f : 1f);
+
             pitch  = Mathf.Clamp(pitch, minPitch, maxPitch);
 
             OrbitCamera(_ctx);

@@ -41,7 +41,7 @@ namespace Core.Settings
         public FloatSetting FloatPath = FloatSetting.Audio_MasterVolume;
 
         [Tooltip("Which int setting to bind. Only used when Type = Int.")]
-        public IntSetting IntPath = IntSetting.Graphics_TargetFrameRate;
+        public IntSetting IntPath = IntSetting.Graphics_QualityLevel;
 
         [Header("Range")] public float MinValue = 0f;
         public float MaxValue = 1f;

@@ -13,28 +13,38 @@ MonoBehaviour:
   m_Name: Localization Database
   m_EditorClassIdentifier: Assembly-CSharp::UIFramework.Localization.LocalizationDatabase
   languages:
-  - languageCode: en
+  - languageCode: English
     displayName: 
     entries:
     - key: play_button
       value: Play
-  - languageCode: lv
+  - languageCode: Latvian
     displayName: 
     entries:
     - key: play_button
       value: "Sp\u0113l\u0113t"
-  - languageCode: ru
+  - languageCode: Russian
     displayName: 
     entries:
     - key: play_button
       value: "\u0418\u0433\u0440\u0430\u0442\u044C"
-  - languageCode: de
+  - languageCode: Deutsch
     displayName: 
     entries:
     - key: play_button
       value: Spielen
-  - languageCode: ja
+  - languageCode: Japanese
     displayName: 
     entries:
     - key: play_button
       value: "\u30D7\u30EC\u30A4"
+  - languageCode: Spanish
+    displayName: es
+    entries:
+    - key: play_button
+      value: Jugar
+  - languageCode: Italian
+    displayName: Italian
+    entries:
+    - key: play_button
+      value: Inizia

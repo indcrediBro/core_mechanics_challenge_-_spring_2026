@@ -21,6 +21,7 @@
 // ============================================================
 
 using System.Collections.Generic;
+using GameData;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -36,8 +37,12 @@ namespace Core.Settings
     {
         // ── Binding type ───────────────────────────────────────────────────
 
-        public enum BindingType { Int, Bool }
-
+        public enum BindingType
+        {
+            Int,
+            Bool,
+            String
+        }
         // ── Inspector ──────────────────────────────────────────────────────
 
         [Header("Binding")]
@@ -49,7 +54,9 @@ namespace Core.Settings
         public IntSetting IntPath = IntSetting.Graphics_QualityLevel;
 
         [Tooltip("Which BoolSetting to bind. Only used when Type = Bool.")]
-        public BoolSetting BoolPath = BoolSetting.Graphics_VSyncEnabled;
+        public BoolSetting BoolPath = BoolSetting.Graphics_Fullscreen;
+
+        public StringSetting StringPath = StringSetting.Gameplay_Language;
 
         [Header("Options")]
         [Tooltip("Display strings shown in the label for each value.\n\n" +
@@ -76,6 +83,8 @@ namespace Core.Settings
         [Tooltip("Auto-fill with Off / On for Bool bindings.\n" +
                  "Ignored when Options has entries.")]
         public bool AutoPopulateBool = true;
+
+        public bool AutoPopulateLanguages;
 
         [Header("UI References")]
         [Tooltip("The ◀ button. Decrements the selection.")]
@@ -169,11 +178,12 @@ namespace Core.Settings
 
         private void OnExternalChanged(object changed)
         {
-            bool isOurs = Type == BindingType.Bool
-                ? changed is BoolSetting b && b == BoolPath
-                : changed is IntSetting  i && i == IntPath;
-
-            if (isOurs) PullFromManager();
+            bool isOurs = Type switch
+            {
+                BindingType.Bool   => changed is BoolSetting   b && b == BoolPath,
+                BindingType.String => changed is StringSetting s && s == StringPath,
+                _                  => changed is IntSetting    i && i == IntPath,
+            };
         }
 
         // ── Sync: UI → Manager ─────────────────────────────────────────────
@@ -182,19 +192,24 @@ namespace Core.Settings
         {
             if (_isSyncing) return;
 
-            if (Type == BindingType.Bool)
+            switch (Type)
             {
-                // Index 0 = false, Index 1 = true
-                SettingsManager.SetBool(BoolPath, _currentIndex == 1);
-            }
-            else
-            {
-                // For MSAA the stored value is a sample count, not the list index
-                int storedValue = AutoPopulateAntiAliasing
-                    ? (_currentIndex < MsaaSampleCounts.Length ? MsaaSampleCounts[_currentIndex] : 0)
-                    : _currentIndex;
+                case BindingType.Bool:
+                    SettingsManager.SetBool(BoolPath, _currentIndex == 1);
+                    break;
 
-                SettingsManager.SetInt(IntPath, storedValue);
+                case BindingType.Int:
+                    // ✅ FIXED — MSAA stores sample count; everything else stores index directly
+                    int storedValue = AutoPopulateAntiAliasing
+                        ? (_currentIndex < MsaaSampleCounts.Length ? MsaaSampleCounts[_currentIndex] : 0)
+                        : _currentIndex;
+                    SettingsManager.SetInt(IntPath, storedValue);
+                    break;
+
+                case BindingType.String:
+                    string value = GameDefaultData.AllLanguages[_currentIndex];
+                    SettingsManager.SetString(StringSetting.Gameplay_Language, value);
+                    break;
             }
         }
 
@@ -204,6 +219,16 @@ namespace Core.Settings
         {
             if (Type == BindingType.Bool)
                 return SettingsManager.GetBool(BoolPath) ? 1 : 0;
+
+            if (Type == BindingType.String)
+            {
+                string value = GamePrefs.GetString(GameDefaultData.LanguageKey);
+                for (int i = 0; i < GameDefaultData.AllLanguages.Length; i++)
+                {
+                    if(GameDefaultData.AllLanguages[i] == value)
+                        return i;
+                }
+            }
 
             int stored = SettingsManager.GetInt(IntPath);
 
@@ -259,6 +284,10 @@ namespace Core.Settings
             else if (Options != null && Options.Count > 0)
             {
                 _resolvedOptions.AddRange(Options);
+            }
+            else if (AutoPopulateLanguages)
+            {
+                 _resolvedOptions.AddRange(GameDefaultData.AllLanguages);
             }
         }
     }

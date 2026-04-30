@@ -13,6 +13,7 @@
 //  list in your AudioMixer asset (right-click a parameter → Expose).
 // ============================================================
 
+using UIFramework.Localization;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -52,7 +53,7 @@ namespace Core.Settings
 
         // ── Unity lifecycle ────────────────────────────────────────────────────
 
-        private void Awake()
+        private void Start()
         {
             // Ensure settings are loaded before we try to apply them.
             // SettingsManager is lazy-loading so this is safe even if Load()
@@ -70,6 +71,8 @@ namespace Core.Settings
         {
             ApplyAudio();
             ApplyGraphics();
+            ApplyLanguage();
+            ApplyGameplay();
             // Gameplay & Accessibility have no engine-level equivalents here;
             // individual gameplay systems should subscribe to OnApplied directly
             // and read from SettingsManager.LiveGameplay / LiveAccessibility.
@@ -83,10 +86,7 @@ namespace Core.Settings
 
             var a = SettingsManager.LiveAudio;
 
-            // When MuteAll is on, drive master to -80 dB regardless of the fader
-            float effectiveMaster = a.MuteAll ? 0f : a.MasterVolume;
-
-            SetMixerDb(masterVolumeParam, effectiveMaster);
+            SetMixerDb(masterVolumeParam, a.MasterVolume);
             SetMixerDb(musicVolumeParam, a.MusicVolume);
             SetMixerDb(sfxVolumeParam, a.SFXVolume);
             SetMixerDb(uiVolumeParam, a.UIVolume);
@@ -114,17 +114,8 @@ namespace Core.Settings
             if (g.QualityLevel >= 0 && g.QualityLevel < QualitySettings.names.Length)
                 QualitySettings.SetQualityLevel(g.QualityLevel, applyExpensiveChanges: true);
 
-            // VSync (overrides targetFrameRate when enabled)
-            QualitySettings.vSyncCount = g.VSyncEnabled ? 1 : 0;
-
-            // Target frame rate (only active when VSync is off)
-            Application.targetFrameRate = g.TargetFrameRate;
-
-            // MSAA (0 = off, 2, 4, 8 samples)
-            QualitySettings.antiAliasing = g.AntiAliasingLevel;
-
-            // Resolution + fullscreen mode
-            ApplyResolution(g);
+            // fullscreen mode
+            ApplyFullscreen(g);
 
             // URP render scale — requires UnityEngine.Rendering.Universal
             // Uncomment the block below if you use URP and have the package installed:
@@ -134,30 +125,44 @@ namespace Core.Settings
             // if (urpAsset != null) urpAsset.renderScale = g.RenderScale;
         }
 
-        private static void ApplyResolution(GraphicsSettings g)
+        private static void ApplyFullscreen(GraphicsSettings g)
         {
             var mode = g.Fullscreen
                 ? FullScreenMode.ExclusiveFullScreen
                 : FullScreenMode.Windowed;
 
-            if (g.ResolutionIndex >= 0)
-            {
-                var resolutions = Screen.resolutions;
-                if (g.ResolutionIndex < resolutions.Length)
-                {
-                    var res = resolutions[g.ResolutionIndex];
-                    Screen.SetResolution(res.width, res.height, mode);
-                    return;
-                }
-
-                Debug.LogWarning($"[SettingsApplier] ResolutionIndex {g.ResolutionIndex} is out of range " +
-                                 $"(Screen has {Screen.resolutions.Length} entries). Skipping resolution change.");
-            }
-            else
-            {
                 // -1 = no resolution preference, just toggle fullscreen
                 Screen.fullScreenMode = mode;
+
+        }
+
+        private static void ApplyLanguage()
+        {
+            var lang = SettingsManager.LiveGameplay.Language;
+            if (string.IsNullOrEmpty(lang)) return;
+
+            if (!LocalizationManager.IsInitialised)
+            {
+                Debug.LogWarning("[SettingsApplier] LocalizationManager not yet initialised — language will be applied on its Awake.");
+                return;
             }
+
+            if (!LocalizationManager.Instance.SetLanguage(lang))
+                Debug.LogWarning($"[SettingsApplier] Language '{lang}' not found in LocalizationDatabase.");
+        }
+
+        private static void ApplyGameplay()
+        {
+            var g = SettingsManager.LiveGameplay;
+
+
+            // Write individual GamePrefs keys so legacy systems (e.g. GameSessionData)
+            // can read them without depending directly on SettingsManager.
+            GamePrefs.SetFloat("Sensitivity", g.MouseSensitivity);
+            GamePrefs.SetBool ("InvertY",     g.InvertY);
+            GamePrefs.SetBool ("Profanity",   g.ProfanityEnabled);
+            GamePrefs.SetString("Language",   g.Language);
+            // No extra Save() needed — SettingsManager.Apply() already calls GamePrefs.Save().
         }
     }
 }

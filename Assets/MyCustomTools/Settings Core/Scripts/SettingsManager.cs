@@ -29,10 +29,10 @@ namespace Core.Settings
     public static class SettingsManager
     {
         // ── GamePrefs keys ─────────────────────────────────────────────────────
-        private const string KeyAudio = "Settings.Audio";
-        private const string KeyGraphics = "Settings.Graphics";
-        private const string KeyGameplay = "Settings.Gameplay";
-        private const string KeyAccessibility = "Settings.Accessibility";
+        private const string KeyAudio = "Audio";
+        private const string KeyGraphics = "Graphics";
+        private const string KeyGameplay = "Gameplay";
+        private const string KeyAccessibility = "Accessibility";
 
         // ── State ──────────────────────────────────────────────────────────────
         private static AudioSettings _liveAudio;
@@ -240,12 +240,7 @@ namespace Core.Settings
                 FloatSetting.Audio_MusicVolume => _pendingAudio.MusicVolume,
                 FloatSetting.Audio_SFXVolume => _pendingAudio.SFXVolume,
                 FloatSetting.Audio_UIVolume => _pendingAudio.UIVolume,
-                FloatSetting.Graphics_RenderScale => _pendingGraphics.RenderScale,
                 FloatSetting.Gameplay_MouseSensitivity => _pendingGameplay.MouseSensitivity,
-                FloatSetting.Gameplay_UIScale => _pendingGameplay.UIScale,
-                FloatSetting.Accessibility_TextScale => _pendingAccessibility.TextScale,
-                FloatSetting.Accessibility_SubtitleSize => _pendingAccessibility.SubtitleSize,
-                FloatSetting.Accessibility_Contrast => _pendingAccessibility.Contrast,
                 _ => defaultValue,
             };
         }
@@ -259,12 +254,7 @@ namespace Core.Settings
                 case FloatSetting.Audio_MusicVolume: _pendingAudio.MusicVolume = value; break;
                 case FloatSetting.Audio_SFXVolume: _pendingAudio.SFXVolume = value; break;
                 case FloatSetting.Audio_UIVolume: _pendingAudio.UIVolume = value; break;
-                case FloatSetting.Graphics_RenderScale: _pendingGraphics.RenderScale = value; break;
                 case FloatSetting.Gameplay_MouseSensitivity: _pendingGameplay.MouseSensitivity = value; break;
-                case FloatSetting.Gameplay_UIScale: _pendingGameplay.UIScale = value; break;
-                case FloatSetting.Accessibility_TextScale: _pendingAccessibility.TextScale = value; break;
-                case FloatSetting.Accessibility_SubtitleSize: _pendingAccessibility.SubtitleSize = value; break;
-                case FloatSetting.Accessibility_Contrast: _pendingAccessibility.Contrast = value; break;
                 default:
                     Debug.LogWarning($"[SettingsManager] Unhandled FloatSetting: {setting}");
                     return;
@@ -282,11 +272,6 @@ namespace Core.Settings
             return setting switch
             {
                 IntSetting.Graphics_QualityLevel => _pendingGraphics.QualityLevel,
-                IntSetting.Graphics_ResolutionIndex => _pendingGraphics.ResolutionIndex,
-                IntSetting.Graphics_TargetFrameRate => _pendingGraphics.TargetFrameRate,
-                IntSetting.Graphics_AntiAliasingLevel => _pendingGraphics.AntiAliasingLevel,
-                IntSetting.Gameplay_Difficulty => _pendingGameplay.Difficulty,
-                IntSetting.Accessibility_ColorblindType => _pendingAccessibility.ColorblindType,
                 _ => defaultValue,
             };
         }
@@ -297,11 +282,6 @@ namespace Core.Settings
             switch (setting)
             {
                 case IntSetting.Graphics_QualityLevel: _pendingGraphics.QualityLevel = value; break;
-                case IntSetting.Graphics_ResolutionIndex: _pendingGraphics.ResolutionIndex = value; break;
-                case IntSetting.Graphics_TargetFrameRate: _pendingGraphics.TargetFrameRate = value; break;
-                case IntSetting.Graphics_AntiAliasingLevel: _pendingGraphics.AntiAliasingLevel = value; break;
-                case IntSetting.Gameplay_Difficulty: _pendingGameplay.Difficulty = value; break;
-                case IntSetting.Accessibility_ColorblindType: _pendingAccessibility.ColorblindType = value; break;
                 default:
                     Debug.LogWarning($"[SettingsManager] Unhandled IntSetting: {setting}");
                     return;
@@ -318,21 +298,10 @@ namespace Core.Settings
             EnsureInit();
             return setting switch
             {
-                BoolSetting.Audio_MuteAll => _pendingAudio.MuteAll,
                 BoolSetting.Graphics_Fullscreen => _pendingGraphics.Fullscreen,
-                BoolSetting.Graphics_VSyncEnabled => _pendingGraphics.VSyncEnabled,
-                BoolSetting.Graphics_Bloom => _pendingGraphics.Bloom,
-                BoolSetting.Graphics_MotionBlur => _pendingGraphics.MotionBlur,
-                BoolSetting.Graphics_AmbientOcclusion => _pendingGraphics.AmbientOcclusion,
+
                 BoolSetting.Gameplay_InvertY => _pendingGameplay.InvertY,
-                BoolSetting.Gameplay_ShowTutorials => _pendingGameplay.ShowTutorials,
-                BoolSetting.Gameplay_ShowDamageNumbers => _pendingGameplay.ShowDamageNumbers,
-                BoolSetting.Gameplay_ScreenShake => _pendingGameplay.ScreenShake,
-                BoolSetting.Accessibility_ColorblindMode => _pendingAccessibility.ColorblindMode,
-                BoolSetting.Accessibility_ReducedMotion => _pendingAccessibility.ReducedMotion,
-                BoolSetting.Accessibility_LargeText => _pendingAccessibility.LargeText,
-                BoolSetting.Accessibility_SubtitlesEnabled => _pendingAccessibility.SubtitlesEnabled,
-                BoolSetting.Accessibility_HighContrastUI => _pendingAccessibility.HighContrastUI,
+                BoolSetting.Gameplay_EnableProfanity => _pendingGameplay.ProfanityEnabled,
                 _ => defaultValue,
             };
         }
@@ -342,21 +311,9 @@ namespace Core.Settings
             EnsureInit();
             switch (setting)
             {
-                case BoolSetting.Audio_MuteAll: _pendingAudio.MuteAll = value; break;
                 case BoolSetting.Graphics_Fullscreen: _pendingGraphics.Fullscreen = value; break;
-                case BoolSetting.Graphics_VSyncEnabled: _pendingGraphics.VSyncEnabled = value; break;
-                case BoolSetting.Graphics_Bloom: _pendingGraphics.Bloom = value; break;
-                case BoolSetting.Graphics_MotionBlur: _pendingGraphics.MotionBlur = value; break;
-                case BoolSetting.Graphics_AmbientOcclusion: _pendingGraphics.AmbientOcclusion = value; break;
                 case BoolSetting.Gameplay_InvertY: _pendingGameplay.InvertY = value; break;
-                case BoolSetting.Gameplay_ShowTutorials: _pendingGameplay.ShowTutorials = value; break;
-                case BoolSetting.Gameplay_ShowDamageNumbers: _pendingGameplay.ShowDamageNumbers = value; break;
-                case BoolSetting.Gameplay_ScreenShake: _pendingGameplay.ScreenShake = value; break;
-                case BoolSetting.Accessibility_ColorblindMode: _pendingAccessibility.ColorblindMode = value; break;
-                case BoolSetting.Accessibility_ReducedMotion: _pendingAccessibility.ReducedMotion = value; break;
-                case BoolSetting.Accessibility_LargeText: _pendingAccessibility.LargeText = value; break;
-                case BoolSetting.Accessibility_SubtitlesEnabled: _pendingAccessibility.SubtitlesEnabled = value; break;
-                case BoolSetting.Accessibility_HighContrastUI: _pendingAccessibility.HighContrastUI = value; break;
+                case BoolSetting.Gameplay_EnableProfanity: _pendingGameplay.ProfanityEnabled = value; break;
                 default:
                     Debug.LogWarning($"[SettingsManager] Unhandled BoolSetting: {setting}");
                     return;
@@ -397,7 +354,8 @@ namespace Core.Settings
 
         private static void EnsureInit()
         {
-            if (!_initialised) Load();
+            if (!_initialised)
+                Load();
         }
     }
 }

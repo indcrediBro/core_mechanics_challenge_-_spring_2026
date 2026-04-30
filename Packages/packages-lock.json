@@ -6,6 +6,13 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.leadr.sdk": {
+      "version": "https://github.com/LEADR-Official/leadr-sdk-unity.git?path=Packages/com.leadr.sdk",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "661321447626506d6668eaa56a49236b90c6a264"
+    },
     "com.unity.2d.animation": {
       "version": "14.0.3",
       "depth": 0,

@@ -22,7 +22,7 @@ namespace UIFramework.Components
         [SerializeField] private string key;
 
         // ── Runtime ───────────────────────────────────────────────────────────────
-        private TextMeshProUGUI _text;
+        private TMP_Text _text;
         private object[]        _formatArgs;
 
         // ── Properties ────────────────────────────────────────────────────────────
@@ -35,7 +35,7 @@ namespace UIFramework.Components
         // ── Unity Lifecycle ───────────────────────────────────────────────────────
         private void Awake()
         {
-            _text = GetComponent<TextMeshProUGUI>();
+            _text = GetComponent<TMP_Text>();
         }
 
         private void OnEnable()
