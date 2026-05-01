@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.CurrentState != GameState.Playing) return;
+
         foreach (PlayerAbilityBase ability in abilities)
         {
             ability.OnUpdate(playerContext);
@@ -38,6 +40,8 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GameManager.Instance.CurrentState != GameState.Playing) return;
+
         foreach (PlayerAbilityBase ability in abilities)
         {
             ability.OnFixedUpdate(playerContext);
@@ -46,6 +50,8 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (GameManager.Instance.CurrentState != GameState.Playing) return;
+
         foreach (PlayerAbilityBase ability in abilities)
         {
             ability.OnTriggerColliderEnter(other, playerContext);
@@ -54,6 +60,8 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        if (GameManager.Instance.CurrentState != GameState.Playing) return;
+
         foreach (PlayerAbilityBase ability in abilities)
         {
             ability.OnCollisionColliderEnter(other, playerContext);

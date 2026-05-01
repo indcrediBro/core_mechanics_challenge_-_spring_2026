@@ -260,6 +260,7 @@ MonoBehaviour:
   platformMaterial: {fileID: 0}
   shouldMoveToRandomHeight: 1
   shouldDestroyRandomlyOnStart: 1
+  enemyPrefab: {fileID: 7055942972875309604, guid: db0bf5626df70b145a5d6d464f06d9e0, type: 3}
   onBounceTaken:
     m_PersistentCalls:
       m_Calls:

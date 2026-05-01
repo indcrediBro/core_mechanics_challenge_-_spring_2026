@@ -10,6 +10,7 @@ public class Platform : MonoBehaviour
     [SerializeField] private Material platformMaterial;
     [SerializeField] private bool shouldMoveToRandomHeight;
     [SerializeField] private bool shouldDestroyRandomlyOnStart;
+    [SerializeField] private GameObject enemyPrefab;
 
     [SerializeField] private UnityEvent onBounceTaken;
 
@@ -28,6 +29,8 @@ public class Platform : MonoBehaviour
         {
             float random = Random.Range(0f, 15f);
             transform.position = new Vector3(transform.position.x, transform.position.y + random, transform.position.z);
+
+            SpawnEnemyRandomly();
         }
     }
 
@@ -70,5 +73,14 @@ public class Platform : MonoBehaviour
     private void BreakTile()
     {
         Destroy(gameObject);
+    }
+
+    private void SpawnEnemyRandomly()
+    {
+        int r =  Random.Range(0, 15);
+        if (r == 0)
+        {
+            Instantiate(enemyPrefab,transform.position + Vector3.up, Quaternion.identity);
+        }
     }
 }

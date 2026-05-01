@@ -55,7 +55,7 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
-        if (player == null) return;
+        if (player == null || GameManager.Instance.CurrentState != GameState.Playing) return;
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
         bool playerInRange = distanceToPlayer <= detectionRange;

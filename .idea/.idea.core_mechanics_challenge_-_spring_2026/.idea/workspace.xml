@@ -6,31 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="06ef1e3e-b9c5-4315-8a47-3838b97dfe37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core_mechanics_challenge_-_spring_2026/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core_mechanics_challenge_-_spring_2026/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/Chain (1).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/Chain (1).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/Chain.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/Chain.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/Jail Door.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/Jail Door.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/dragon-studio-terrifying-scream-353210.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/dragon-studio-terrifying-scream-353210.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/freesound_community-alphascream001-98301.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/freesound_community-alphascream001-98301.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/freesound_community-desk-thud-106752.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/freesound_community-desk-thud-106752.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/freesound_community-scream-with-echo-46585.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/freesound_community-scream-with-echo-46585.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/freesound_community-volcano-71156.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/freesound_community-volcano-71156.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/u_5iteaickfa-lava-steam-with-bubbles-312339.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/u_5iteaickfa-lava-steam-with-bubbles-312339.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/universfield-male-death-scream-horror-352706.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/universfield-male-death-scream-horror-352706.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Floor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Platform.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Floor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Floor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerBounceAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerBounceAbility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Platform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +147,8 @@
       <workItem from="1777514332762" duration="4187000" />
       <workItem from="1777532440860" duration="2302000" />
       <workItem from="1777554780045" duration="12994000" />
-      <workItem from="1777576733701" duration="7712000" />
+      <workItem from="1777576733701" duration="7937000" />
+      <workItem from="1777622491944" duration="817000" />
     </task>
     <servers />
   </component>
