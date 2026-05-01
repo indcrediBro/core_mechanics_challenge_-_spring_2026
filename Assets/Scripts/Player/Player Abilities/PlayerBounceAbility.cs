@@ -13,15 +13,6 @@ namespace PlayerAbility
         [Title("Ground Check")]
         [SerializeField] private float groundcheckRadius = 0.2f;
         [SerializeField] private LayerMask groundLayer;
-        private float cooldown;
-        private bool canBreak;
-
-        public override void OnStart(PlayerContextData _ctx = null)
-        {
-            base.OnStart(_ctx);
-            cooldown = 0.25f;
-            canBreak = true;
-        }
 
         public override void OnFixedUpdate(PlayerContextData _ctx = null)
         {
@@ -35,7 +26,6 @@ namespace PlayerAbility
             Collider[] hits = IsGrounded3D(_ctx);
             bool isGrounded = hits.Length > 0;
 
-            // Only fire on the frame the player LANDS (airborne → grounded transition)
             if (isGrounded && !wasGrounded)
             {
                 _ctx.rigidbody.linearVelocity = new Vector3(
@@ -51,20 +41,8 @@ namespace PlayerAbility
             wasGrounded = isGrounded;
         }
 
-        private IEnumerator EnableBreaknessCO()
-        {
-            yield return new WaitForSeconds(cooldown);
-            canBreak = true;
-        }
-
-        private void EnableBreakness(PlayerContextData _ctx)
-        {
-            _ctx.player.StartCoroutine(EnableBreaknessCO());
-        }
-
         private Collider[] IsGrounded3D(PlayerContextData _ctx)
         {
-            // return Groundchecker.GetGroundHitsRaycast(_ctx.player.transform, groundcheckRadius, groundLayer);
             return Groundchecker.GetGroundHits(_ctx.groundCheck, groundcheckRadius, groundLayer);
         }
     }

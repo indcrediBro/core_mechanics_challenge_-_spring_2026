@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Weapons
 {
@@ -12,6 +13,8 @@ namespace Weapons
         private bool isFiring = false;
 
         public WeaponContextData Data => data;
+
+        public UnityEvent onShoot;
 
         public void TryShoot(Vector3 direction)
         {
@@ -30,7 +33,7 @@ namespace Weapons
         private void Fire(Vector3 direction)
         {
             nextFireTime = Time.time + 1f / data.fireRate;
-
+            onShoot?.Invoke();
             foreach (Transform muzzle in muzzles)
             {
                 for (int i = 0; i < data.pelletsPerShot; i++)
@@ -41,8 +44,8 @@ namespace Weapons
                     else FireHitscan(muzzle, spreadDir);
                 }
             }
-            Debug.Log("Fired");
-            ApplyFeel(direction);
+            // Debug.Log("Fired");
+            // ApplyFeel(direction);
         }
 
         private IEnumerator FireContinuous(Vector3 direction)

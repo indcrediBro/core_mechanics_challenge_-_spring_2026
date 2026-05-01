@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Floor
   shouldRotateRandomly: 0
   direction: {x: 0, y: 1, z: 0}
-  rotateSpeedRange: {x: -2, y: 2}
+  rotateSpeedRange: {x: 2.5, y: 5}
 --- !u!1001 &35548887300280412
 PrefabInstance:
   m_ObjectHideFlags: 0

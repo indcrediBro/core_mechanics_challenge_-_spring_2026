@@ -10,7 +10,7 @@ public class Floor : MonoBehaviour
 
 
     [SerializeField, Dropdown("_directions"), ShowIf("shouldRotateRandomly")]
-    private Vector3 direction;
+    private Vector3 direction = Vector3.up;
 
     [SerializeField, MinMaxSlider(-5.0f, 5.0f), ShowIf("shouldRotateRandomly")]
     private Vector2 rotateSpeedRange;
@@ -30,7 +30,10 @@ public class Floor : MonoBehaviour
     private void OnEnable()
     {
         int r =  Random.Range(0, 4);
-        if(r == 0){ shouldRotateRandomly = true; }
+        if (r == 0)
+        {
+            EnableRotation();
+        }
     }
 
     private void Update()
@@ -41,11 +44,13 @@ public class Floor : MonoBehaviour
         }
     }
 
-    public void EnableRotation(bool _randomizeSpeed = false)
+    public void EnableRotation()
     {
-        if (_randomizeSpeed)
+        rotateSpeed = Random.Range(rotateSpeedRange.x, rotateSpeedRange.y);
+        int r = Random.Range(0, 2);
+        if (r == 0)
         {
-            rotateSpeed = Random.Range(rotateSpeedRange.x, rotateSpeedRange.y);
+            rotateSpeed *= -1;
         }
         shouldRotateRandomly = true;
     }
