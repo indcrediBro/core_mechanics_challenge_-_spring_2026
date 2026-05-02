@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4702572172891189885}
   - component: {fileID: 2435026974629674782}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,8 +162,7 @@ GameObject:
   - component: {fileID: 3812179974529886789}
   - component: {fileID: 4111063416242199138}
   - component: {fileID: 5115071738779573309}
-  - component: {fileID: 1492007375598718835}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +179,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.20000002, y: 0.20000002, z: 0.20000002}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2169191671553740090}
@@ -218,7 +217,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3ad93473f787c064ab209331f7f731e1, type: 2}
+  - {fileID: 2100000, guid: 677c345e170071e4093be7ab59dbd67c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -242,27 +241,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &1492007375598718835
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7997489033100446039}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8093375803150886306
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +252,7 @@ GameObject:
   - component: {fileID: 2169191671553740090}
   - component: {fileID: 7173027488377470553}
   - component: {fileID: 6497542228863006169}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,7 +295,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.1
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &6497542228863006169
 Rigidbody:

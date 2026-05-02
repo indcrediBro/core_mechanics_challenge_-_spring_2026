@@ -6,11 +6,190 @@
   <component name="ChangeListManager">
     <list default="true" id="06ef1e3e-b9c5-4315-8a47-3838b97dfe37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core_mechanics_challenge_-_spring_2026/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core_mechanics_challenge_-_spring_2026/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Platform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Core.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Core/EnvironmentManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Core/EnvironmentManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Core/EnvironmentSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Core/EnvironmentSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/DayNight Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/DayNight Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Editor/EnvironmentManagerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Editor/EnvironmentManagerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Editor/VegetationManagerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Editor/VegetationManagerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/EnvironmentSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/EnvironmentSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Lighting/MoonLightController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Lighting/MoonLightController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Moon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Moon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/PostProcessing.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/PostProcessing/PostProcessingVolumeManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/PostProcessing/PostProcessingVolumeManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Scripts/Core.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Scripts/Core/TimeOfDaySettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Scripts/Core/TimeOfDaySettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Scripts/{Core,PostProcessing,Lighting,Weather,Vegetation,Skybox}.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Shaders/ProceduralSkybox.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Shaders/ProceduralSkybox.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Skybox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Skybox/ProceduralSkyboxController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Skybox/ProceduralSkyboxController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Vegetation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Vegetation/VegetationManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Vegetation/VegetationManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Weather.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Weather/CloudShadowManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Weather/CloudShadowManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Weather/WindManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/Weather/WindManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha01.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha02.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha03.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha04.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha04.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha05.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha05.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha06.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha06.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha07.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha07.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha08.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha08.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha09.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha09.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha10.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyCustomTools/DayNightWeatherSystem/fx_cloudalphas/FX_CloudAlpha10.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/Auge/AugeCam.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/Auge/AugeCam.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/HunterRifle/HunterRifle_cam.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/HunterRifle/HunterRifle_cam.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/Russian_sniper/Russian_sniper_cam.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/Russian_sniper/Russian_sniper_cam.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/Scope_a/cam_3.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/Scope_a/cam_3.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/Scope_b/cam_4.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/Scope_b/cam_4.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/Scope_c/cam_5.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/Scope_c/cam_5.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/red_dot_c/Cam_1.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/red_dot_c/Cam_1.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/red_dot_e/cam_2.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/red_dot_e/cam_2.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/grenade_launcher/grenade_launcher_cam.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/grenade_launcher/grenade_launcher_cam.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/revolver/revolver_cam.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/revolver/revolver_cam.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Materials/Enemy Head.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Materials/Enemy Head.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Materials/Enemy Torso 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Materials/Enemy Torso 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Materials/Enemy Torso.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Materials/Enemy Torso.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Enemy Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Enemy Projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/PlayerContextData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/PlayerContextData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/EnemyHealth.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Platform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Fire.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Fire/Fire.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Fire/Fire.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Fire/FireParticle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Fire/FireParticle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Fire/Flame.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Fire/Flame.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Fire/Flame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Fire/Flame.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Fire/Flame.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Fire/Flame.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/Lava.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/Lava.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/Lava.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/Lava.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/Lava.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/Lava.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/LavaNormal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/LavaNormal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/LavaRiver.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/LavaRiver.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/Lavafall.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/Lavafall.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/Materials/Lava.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Lava/Materials/Lava.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma/Magma.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma/Magma.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma/Magma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma/Magma.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma/Magma.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma/Magma.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma/MagmaEmision.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma/MagmaEmision.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma/MagmaNormal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma/MagmaNormal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma/Rock.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Magma/Rock.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Scenes/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Scenes/Demo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Scenes/Demo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Scenes/Demo/LightingData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Scenes/Demo/LightingData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Scenes/Demo/Lightmap-0_comp_dir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Scenes/Demo/Lightmap-0_comp_dir.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Scenes/Demo/Lightmap-0_comp_light.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Scenes/Demo/Lightmap-0_comp_light.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Scenes/Demo/ReflectionProbe-0.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Scenes/Demo/ReflectionProbe-0.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/ShaderPack.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/ShaderPack.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete).meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/LavaRiver.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/LavaRiver.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Materials/360_F_477109553_vGKiaY0mx1pO0S6tOzJQQPAUo3O91CF2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Materials/360_F_477109553_vGKiaY0mx1pO0S6tOzJQQPAUo3O91CF2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Materials/Rock.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Materials/Rock.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Materials/Skybox.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Materials/Skybox.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Rock.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Rock.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Rock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Rock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/RockN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/RockN.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Volcano.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TerrainTex(Delete)/Volcano.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SaveData/gameprefs_slot0.json" beforeDir="false" afterPath="$PROJECT_DIR$/SaveData/gameprefs_slot0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SaveData/gameprefs_slot0.json.bak" beforeDir="false" afterPath="$PROJECT_DIR$/SaveData/gameprefs_slot0.json.bak" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +204,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/PlayerContextData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/WeaponContextData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/PlatformHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerCameraAbility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerCollisionAbility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerGunAbility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player Abilities/PlayerWeaponAbility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Localization/LocalizationDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Localization/LocalizationManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -148,7 +330,11 @@
       <workItem from="1777532440860" duration="2302000" />
       <workItem from="1777554780045" duration="12994000" />
       <workItem from="1777576733701" duration="7937000" />
-      <workItem from="1777622491944" duration="817000" />
+      <workItem from="1777622491944" duration="1298000" />
+      <workItem from="1777625107712" duration="298000" />
+      <workItem from="1777646851711" duration="654000" />
+      <workItem from="1777648746603" duration="3542000" />
+      <workItem from="1777713407898" duration="1121000" />
     </task>
     <servers />
   </component>

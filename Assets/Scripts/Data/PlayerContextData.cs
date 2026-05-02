@@ -1,4 +1,5 @@
 using System;
+using TheDeveloperTrain.SciFiGuns;
 using UnityEngine;
 using Weapons;
 
@@ -12,7 +13,8 @@ namespace GameData
         public Transform camera;
         public Transform groundCheck;
         public WeaponController selectedGun;
-
+        public Gun[] allGuns;
+        public Gun activeGun;
         public float yaw;
     }
 }

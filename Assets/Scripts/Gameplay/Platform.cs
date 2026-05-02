@@ -77,6 +77,8 @@ public class Platform : MonoBehaviour
 
     private void SpawnEnemyRandomly()
     {
+        if(GameManager.Instance.CurrentState != GameState.Playing) return;
+
         int r =  Random.Range(0, 15);
         if (r == 0)
         {

@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 3525606617024325650}
   - component: {fileID: 3378624241688048772}
   - component: {fileID: 10403954463530681}
+  - component: {fileID: 7672660270440536147}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -139,6 +140,23 @@ MonoBehaviour:
   fireRate: 1.5
   projectileSpeed: 12
   projectileLifetime: 4
+--- !u!114 &7672660270440536147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7055942972875309604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16a054ab1f7408f9d5495fd31d16f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthSystem.EnemyHealth
+  startingHealth: 100
+  shouldDestroyOnDeath: 1
+  onDamageTaken:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &2728145582776745584
 PrefabInstance:
   m_ObjectHideFlags: 0

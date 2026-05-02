@@ -33,13 +33,18 @@ public class EnemyController : MonoBehaviour
 
     private void Awake()
     {
+        if(GameManager.Instance.CurrentState != GameState.Playing) return;
+
         rb = GetComponent<Rigidbody>();
 
         if (player == null)
         {
             GameObject playerObj = GameObject.FindWithTag("Player");
             if (playerObj != null)
+            {
                 player = playerObj.transform;
+                TurnTowardsPlayer();
+            }
             else
                 Debug.LogWarning("[EnemyController] No Player assigned and none found with tag 'Player'.");
         }
@@ -67,18 +72,6 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private IEnumerator JumpRoutine()
-    {
-        while (true)
-        {
-            float waitTime = Random.Range(jumpIntervalMin, jumpIntervalMax);
-            yield return new WaitForSeconds(waitTime);
-
-            if (isGrounded)
-                Jump();
-        }
-    }
-
     private void Jump()
     {
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
@@ -88,6 +81,8 @@ public class EnemyController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(GameManager.Instance.CurrentState != GameState.Playing) return;
+
         // Simple ground check: any collision from below counts as ground
         foreach (ContactPoint contact in collision.contacts)
         {
@@ -102,6 +97,8 @@ public class EnemyController : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
+        if(GameManager.Instance.CurrentState != GameState.Playing) return;
+
         isGrounded = false;
     }
 
