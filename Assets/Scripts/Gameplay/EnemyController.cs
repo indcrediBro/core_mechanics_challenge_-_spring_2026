@@ -83,6 +83,14 @@ public class EnemyController : MonoBehaviour
     {
         if(GameManager.Instance.CurrentState != GameState.Playing) return;
 
+        if (collision.collider.tag == "Dead")
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.isKinematic = true;
+            Destroy(this);
+        }
+
         // Simple ground check: any collision from below counts as ground
         foreach (ContactPoint contact in collision.contacts)
         {

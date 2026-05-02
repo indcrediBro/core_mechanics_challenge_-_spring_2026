@@ -21,7 +21,7 @@ namespace GameData
         [SerializeField] private static string FULLSCREEN_KEY = "FullScreen";
 
         [Title("Language")]
-        [SerializeField] private static string[] allLanguages = { "English","Russian","Japanese","Deutsch","Latvian", "Spanish", "Italian" };
+        [SerializeField] private static string[] allLanguages = { "English","Russian","Deutsch","Latvian", "Spanish", "Italian" };
         [SerializeField] private static string LANGUAGE_KEY = "Language";
 
         [SerializeField] private static string PROFANITY_KEY = "Profanity";
@@ -34,6 +34,7 @@ namespace GameData
         public static int ScorePerKill => scorePerKill;
 
         public static string HighScoreKey => HIGH_SCORE_KEY;
+        public static string ProfanityKey => PROFANITY_KEY;
         public static string SensitivityKey => MOUSE_SENSITIVITY_KEY;
         public static string MasterKey => MASTER_VOL_KEY;
         public static string SfxVolKey => SFX_VOL_KEY;

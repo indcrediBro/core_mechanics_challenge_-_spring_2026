@@ -1,4 +1,3 @@
-using System.Collections;
 using GameData;
 using IncredibleAttributes;
 using UnityEngine;
@@ -9,17 +8,18 @@ namespace PlayerAbility
     public class PlayerBounceAbility : PlayerAbilityBase
     {
         [Title("Physics")]
-        [SerializeField] float bounceForce = 5f;
+        [SerializeField] private float bounceForce = 5f;
+
         [Title("Ground Check")]
         [SerializeField] private float groundcheckRadius = 0.2f;
         [SerializeField] private LayerMask groundLayer;
+
+        private bool wasGrounded = false;
 
         public override void OnFixedUpdate(PlayerContextData _ctx = null)
         {
             Bounce(_ctx);
         }
-
-        private bool wasGrounded = false;
 
         private void Bounce(PlayerContextData _ctx)
         {
@@ -35,7 +35,13 @@ namespace PlayerAbility
 
                 _ctx.groundCheck.position = hits[0].ClosestPoint(_ctx.groundCheck.position);
                 _ctx.player.onBounce.Invoke();
-                hits[0].GetComponent<Platform>()?.HandleBounce();
+
+                // Grab the Platform component (may be null for non-platform ground)
+                Platform platform = hits[0].GetComponent<Platform>();
+                platform?.HandleBounce();
+
+                // Pass platform reference — GameManager deduplicates by instance
+                GameManager.Instance.RegisterBounce(platform);
             }
 
             wasGrounded = isGrounded;

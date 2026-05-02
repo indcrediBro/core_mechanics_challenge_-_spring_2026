@@ -1,4 +1,3 @@
-using System;
 using IncredibleAttributes;
 using UnityEngine;
 using UnityEngine.Events;
@@ -6,21 +5,27 @@ using Random = UnityEngine.Random;
 
 public class Platform : MonoBehaviour
 {
-    [SerializeField, ShowAssetPreview(64,64)] private Texture[] platformTextures;
-    [SerializeField] private Material platformMaterial;
+    [SerializeField, ShowAssetPreview(64, 64)] private Texture[] platformTextures;
     [SerializeField] private bool shouldMoveToRandomHeight;
     [SerializeField] private bool shouldDestroyRandomlyOnStart;
     [SerializeField] private GameObject enemyPrefab;
 
     [SerializeField] private UnityEvent onBounceTaken;
 
-    private int bounceCount = 0;
-    private float cooldown = .15f;
+    private Material platformMaterial;
+    private HealthSystem.PlatformHealth platformHealth;
+
+    // Tracks how many times this platform has been hit (drives texture index)
+    private int hitCount = 0;
 
     private void Awake()
     {
         platformMaterial = GetComponentInChildren<MeshRenderer>().material;
-        platformMaterial.mainTexture = platformTextures[0];
+        platformHealth   = GetComponentInChildren<HealthSystem.PlatformHealth>();
+
+        // Seed base texture
+        if (platformTextures.Length > 0)
+            platformMaterial.mainTexture = platformTextures[0];
     }
 
     private void OnEnable()
@@ -28,7 +33,10 @@ public class Platform : MonoBehaviour
         if (shouldMoveToRandomHeight)
         {
             float random = Random.Range(0f, 15f);
-            transform.position = new Vector3(transform.position.x, transform.position.y + random, transform.position.z);
+            transform.position = new Vector3(
+                transform.position.x,
+                transform.position.y + random,
+                transform.position.z);
 
             SpawnEnemyRandomly();
         }
@@ -36,53 +44,66 @@ public class Platform : MonoBehaviour
 
     private void Start()
     {
-        if (shouldDestroyRandomlyOnStart)
-        {
-            int r = Random.Range(0, 5);
-            if (r == 0)
-            {
-                Destroy(gameObject);
-            }
-        }
+        if (shouldDestroyRandomlyOnStart && Random.Range(0, 5) == 0)
+            Destroy(gameObject);
     }
+
+    // ─────────────────────────────────────────────────────────────
+    // Public API
+    // ─────────────────────────────────────────────────────────────
 
     public void HandleBounce()
     {
         onBounceTaken?.Invoke();
-        if(platformMaterial == null) return;
+        if (platformMaterial == null) return;
 
-        if (bounceCount <= platformTextures.Length-1)
-        {
-            DamageTile();
-        }
+        hitCount++;
+
+        // Update visuals BEFORE calling TakeDamage so Destroy() can't race the texture swap
+        UpdateDamageVisual();
+
+        // Delegate health/death to PlatformHealth
+        platformHealth?.TakeDamage(GetDamagePerHit());
     }
 
-    private void DamageTile()
+    // ─────────────────────────────────────────────────────────────
+    // Visuals
+    // ─────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Steps through platformTextures using the emission slot — same slot the
+    /// original code used. Index 0 = clean (no extra emission), 1+ = damage states.
+    /// </summary>
+    private void UpdateDamageVisual()
     {
-        bounceCount+=1;
-        if(bounceCount >= platformTextures.Length)
-        {
-            BreakTile();
-        }
-        else
-        {
-            platformMaterial.SetTexture("_EmissionMap", platformTextures[bounceCount]);
-        }
+        if (platformTextures.Length <= 1) return;
+
+        int textureIndex = Mathf.Clamp(hitCount, 0, platformTextures.Length - 1);
+        platformMaterial.SetTexture("_EmissionMap", platformTextures[textureIndex]);
+
+        // Keep emission keyword enabled so the texture is actually visible
+        platformMaterial.EnableKeyword("_EMISSION");
     }
 
-    private void BreakTile()
+    // ─────────────────────────────────────────────────────────────
+    // Helpers
+    // ─────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Scales damage so platformTextures.Length hits kill the platform,
+    /// matching the original bounce-count-based destruction logic.
+    /// </summary>
+    private int GetDamagePerHit()
     {
-        Destroy(gameObject);
+        if (platformHealth == null || platformTextures.Length == 0) return 0;
+        return Mathf.CeilToInt((float)platformHealth.StartingHealth / platformTextures.Length);
     }
 
     private void SpawnEnemyRandomly()
     {
-        if(GameManager.Instance.CurrentState != GameState.Playing) return;
+        if (GameManager.Instance.CurrentState != GameState.Playing) return;
 
-        int r =  Random.Range(0, 15);
-        if (r == 0)
-        {
-            Instantiate(enemyPrefab,transform.position + Vector3.up, Quaternion.identity);
-        }
+        if (Random.Range(0, 15) == 0)
+            Instantiate(enemyPrefab, transform.position + Vector3.up, Quaternion.identity);
     }
 }

@@ -18,33 +18,40 @@ MonoBehaviour:
     entries:
     - key: play_button
       value: Play
+    - key: fuck_text
+      value: Fuck
   - languageCode: Latvian
     displayName: 
     entries:
     - key: play_button
       value: "Sp\u0113l\u0113t"
+    - key: fuck_text
+      value: "B\u0101c"
   - languageCode: Russian
     displayName: 
     entries:
     - key: play_button
       value: "\u0418\u0433\u0440\u0430\u0442\u044C"
+    - key: fuck_text
+      value: "\u041A \u0447\u0451\u0440\u0442\u0443"
   - languageCode: Deutsch
     displayName: 
     entries:
     - key: play_button
       value: Spielen
-  - languageCode: Japanese
-    displayName: 
-    entries:
-    - key: play_button
-      value: "\u30D7\u30EC\u30A4"
+    - key: fuck_text
+      value: "Schei\xDF"
   - languageCode: Spanish
     displayName: es
     entries:
     - key: play_button
       value: Jugar
+    - key: fuck_text
+      value: A la mierda
   - languageCode: Italian
     displayName: Italian
     entries:
     - key: play_button
       value: Inizia
+    - key: fuck_text
+      value: Fanculo
