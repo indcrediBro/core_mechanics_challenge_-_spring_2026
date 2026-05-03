@@ -13513,6 +13513,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8178785622865789113, guid: 896cbb3e4aa3d474da1742204e1a8ea7, type: 3}
+      propertyPath: Invert
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8178785622865789113, guid: 896cbb3e4aa3d474da1742204e1a8ea7, type: 3}
       propertyPath: Setting
       value: 2
       objectReference: {fileID: 0}

@@ -1,6 +1,6 @@
 ﻿{
     "version": 1,
-    "savedAt": "2026-05-02 22:24:43Z",
+    "savedAt": "2026-05-03 07:57:52Z",
     "keys": [
         "Sensitivity",
         "InvertY",
@@ -16,10 +16,10 @@
         "1",
         "1",
         "0",
-        "Spanish",
+        "English",
         "{\"MasterVolume\":0.5783231258392334,\"MusicVolume\":0.800000011920929,\"SFXVolume\":1.0,\"UIVolume\":1.0}",
         "{\"QualityLevel\":5,\"Fullscreen\":true}",
-        "{\"MouseSensitivity\":1.0,\"InvertY\":true,\"ProfanityEnabled\":false,\"Language\":\"Spanish\"}",
+        "{\"MouseSensitivity\":1.0,\"InvertY\":true,\"ProfanityEnabled\":true,\"Language\":\"English\"}",
         "{}",
         "505"
     ]
